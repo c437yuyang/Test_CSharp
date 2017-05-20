@@ -17,35 +17,18 @@ namespace _21_跨线程访问窗体和join方法
         {
             InitializeComponent();
         }
-
-
-
-
         // 共分三步
 
         // 第一步：定义委托类型
         // 将text更新的界面控件的委托类型
         delegate void SetTextCallback(string text);
 
-        //第二步：定义线程的主体方法
-        /// <summary>
-        /// 线程的主体方法
-        /// </summary>
-        private void ThreadProcSafe()
-        {
-            //...执行线程任务
-
-            //在线程中更新UI（通过控件的.Invoke方法）
-            this.SetText("This text was set safely.");
-
-            //...执行线程其他任务
-        }
         //第三步：定义更新UI控件的方法
         /// <summary>
         /// 更新文本框内容的方法
         /// </summary>
         /// <param name="text"></param>
-        private void SetText(string text)
+        private void SetText(Object o)
         {
             // InvokeRequired required compares the thread ID of the 
             // calling thread to the thread ID of the creating thread. 
@@ -58,12 +41,23 @@ namespace _21_跨线程访问窗体和join方法
                     if (this.textBox1.Disposing || this.textBox1.IsDisposed)
                         return;
                 }
-                SetTextCallback d = new SetTextCallback(SetText);
-                this.textBox1.Invoke(d, new object[] { text });
+                //SetTextCallback d = new SetTextCallback(SetText);
+                //this.textBox1.Invoke(d, o as string);
+                
+                //感觉这个方法简单一些，不用用到委托（匿名） ,更简洁
+                //this.textBox1.Invoke(new Action<string>((o1) =>
+                //{
+                //    this.textBox1.Text = o1 as string;
+                //}), o);
+
+                this.textBox1.Invoke(new Action<string>((s) =>
+                {
+                    this.textBox1.Text = s; //这里可以直接写成s,也不用as string
+                }), o);
             }
             else
             {
-                this.textBox1.Text = text;
+                this.textBox1.Text = o as string;
             }
         }
         //之后,启动线程
@@ -74,8 +68,8 @@ namespace _21_跨线程访问窗体和join方法
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            Thread th = new Thread(this.ThreadProcSafe);
-            th.Start();
+            Thread th = new Thread(this.SetText);
+            th.Start("aa");
         }
 
     }

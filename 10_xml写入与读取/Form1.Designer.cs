@@ -35,9 +35,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(74, 60);
+            this.button1.Location = new System.Drawing.Point(74, 59);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(131, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,7 +47,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(74, 99);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(131, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "xmlDocument写入";
             this.button2.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(74, 139);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(131, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "XDocument";
             this.button3.UseVisualStyleBackColor = true;

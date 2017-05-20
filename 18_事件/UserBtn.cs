@@ -17,6 +17,7 @@ namespace _18_事件
             InitializeComponent();
         }
 
+        //按钮作为事件发布者，发布一个事件，需要订阅者去实现这个事件
         public event Action TripleClick;
         int count = 0;
         private void button1_Click(object sender, EventArgs e)

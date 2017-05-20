@@ -24,12 +24,16 @@ namespace _18_事件
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //窗体作为订阅者，需要实现帮按钮这个事件
+            
             //事件只能用+=或-=来赋值,事件不能被直接调用（不要看那个函数，要看具体的action）,只能被声明事件的类调用
             //委托可以用=赋值，之前注册的事件都回被覆盖
             userBtn1.TripleClick += () =>
             {
                 MessageBox.Show("被点击了");
             };
+
+            //userBtn1.TripleClick(); 可以看到不能被调用
         }
     }
 }

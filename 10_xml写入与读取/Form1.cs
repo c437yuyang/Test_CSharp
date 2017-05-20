@@ -48,7 +48,7 @@ namespace _10_xml写入与读取
 
             xmlDoc.Save("a.xml");
             MessageBox.Show("保存成功!");
-
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

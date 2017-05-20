@@ -41,5 +41,13 @@ namespace _08_delegate实现跨窗体调用方法
             return 1;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //窗体给那边加一个时间也可以实现
+            Form3 form3 = new Form3();
+            form3.updateLabel += updateLable;
+            form3.Show();
+
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -56,11 +57,22 @@
             this.labelX1.TabIndex = 1;
             this.labelX1.Text = "labelX1";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(197, 182);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "打开窗体3";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.buttonX1);
             this.Name = "Form1";
@@ -73,6 +85,7 @@
 
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.LabelX labelX1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

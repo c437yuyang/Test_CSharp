@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,8 @@ namespace _14_泛型委托
             Console.WriteLine(x);
             #endregion
             Console.Read();
+
+
         }
 
         static void m1()
