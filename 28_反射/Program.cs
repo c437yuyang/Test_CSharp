@@ -72,7 +72,7 @@ namespace _28_反射
 
             //2.创建类的对象的其他方法
             object obj1 = Activator.CreateInstance(typePerson); //这个方法只能调用无参构造函数
-                                                                //调用指定构造函数来创建对象
+                                                             //调用指定构造函数来创建对象
             ConstructorInfo[] cis = typePerson.GetConstructors();
             ConstructorInfo ci = typePerson.GetConstructor(new Type[] { typeof(string), typeof(int) });
 
@@ -80,7 +80,8 @@ namespace _28_反射
             PropertyInfo pInfo = typePerson.GetProperty("name");
             Console.WriteLine(pInfo.GetValue(obj2,null));
 
-            Console.Read();
+
+
         }
 
         public class Person
