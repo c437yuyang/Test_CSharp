@@ -87,6 +87,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38_两种单例模式的实
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28_1_反射创建对象", "28_1_反射创建对象\28_1_反射创建对象.csproj", "{3C3EEF8A-439C-4A0B-9F79-AFB016DBDD09}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{4653F548-0250-45BD-BE9D-A9B8F2BDAA8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{400279D4-E532-4447-8CC5-C073EB7779A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "39_01_Serializable", "39_Serializable\39_01_Serializable.csproj", "{147A7E43-0B3C-4FE5-97D2-8324C7C4C816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "40_01_引用类型在容器的contain方法里的表现", "40_01_引用类型在容器的contain方法里的表现\40_01_引用类型在容器的contain方法里的表现.csproj", "{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,8 +269,23 @@ Global
 		{3C3EEF8A-439C-4A0B-9F79-AFB016DBDD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C3EEF8A-439C-4A0B-9F79-AFB016DBDD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C3EEF8A-439C-4A0B-9F79-AFB016DBDD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400279D4-E532-4447-8CC5-C073EB7779A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400279D4-E532-4447-8CC5-C073EB7779A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400279D4-E532-4447-8CC5-C073EB7779A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400279D4-E532-4447-8CC5-C073EB7779A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147A7E43-0B3C-4FE5-97D2-8324C7C4C816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147A7E43-0B3C-4FE5-97D2-8324C7C4C816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147A7E43-0B3C-4FE5-97D2-8324C7C4C816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147A7E43-0B3C-4FE5-97D2-8324C7C4C816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{400279D4-E532-4447-8CC5-C073EB7779A6} = {4653F548-0250-45BD-BE9D-A9B8F2BDAA8C}
 	EndGlobalSection
 EndGlobal

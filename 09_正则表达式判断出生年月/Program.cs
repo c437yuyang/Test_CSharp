@@ -103,6 +103,7 @@ using System.Threading.Tasks;
 
 namespace _09_正则表达式判断出生年月
 {
+    //这个例子是当时哥哥给的excel里的信息是由2年3月1天等信息需要全部转换成天用来排序的时候做的
     class Program
     {
         static void Main(string[] args)

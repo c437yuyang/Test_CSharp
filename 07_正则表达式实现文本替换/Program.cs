@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace _07_正则表达式实现文本替换
 {
+    //这个例子是当时网上找到霍夫曼编码的码表有点问题需要自己改一下的时候写的，有正则的搜索，分组，替换三个内容主要是
     class Program
     {
         static void Main(string[] args)

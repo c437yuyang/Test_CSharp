@@ -31,8 +31,8 @@ namespace _26_socketClient
                 _currentSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             try
             {
-                //currentSocket.Connect(IPAddress.Parse(tb_Ip.Text.Trim()), int.Parse(tb_port.Text));
-                _currentSocket.Connect("127.0.0.1", 50000);
+                _currentSocket.Connect(IPAddress.Parse(tb_Ip.Text.Trim()), int.Parse(tb_port.Text));
+                //_currentSocket.Connect("127.0.0.1", 50000);
             }
             catch (System.Exception ex)
             {

@@ -9,6 +9,7 @@ namespace _09_正则改文件名
 {
     class Program
     {
+        //这个例子是当时评价表需要批量重命名的时候(井波的格式错了)
         static void Main(string[] args)
         {
             string path = @"I:\My Documents\My Desktop\开学\勤工俭学\评价表第二波_5_20\复查表15-16（下）-梁";
