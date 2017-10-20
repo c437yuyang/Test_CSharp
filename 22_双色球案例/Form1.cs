@@ -33,14 +33,15 @@ namespace _22_双色球案例
             while (isRunning)
             {
                 Random r = new Random();
-                foreach(Label item in lables)
+                foreach (Label item in lables)
                 {
                     string randNum = r.Next(1, 10).ToString();
-                    if (item.InvokeRequired)
+                    if (item.InvokeRequired) //invokerequired就是表示如果是跨线程的话，需要使用invoke
                     {
-                        item.Invoke(new Action<string>((s) => { item.Text = s; })
-                            , randNum);
-                        //item.Invoke(,)
+                        item.Invoke(new Action<string>((s) =>
+                        {
+                            item.Text = s;
+                        }), randNum);
                     }
                     else
                     {
@@ -53,12 +54,12 @@ namespace _22_双色球案例
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for(int i = 0; i != 10; ++i)
+            for (int i = 0; i != 10; ++i)
             {
                 Label l = new Label();
                 l.AutoSize = true;
                 l.Text = "0";
-                l.Location = new Point(i * 20+20, 100);
+                l.Location = new Point(i * 20 + 20, 100);
                 lables.Add(l);
                 this.Controls.Add(l);
             }

@@ -15,6 +15,9 @@ namespace _06_枚举类型
             Console.WriteLine(msg);
        
             Console.WriteLine((byte)msg==3); //可以直接强制类型转换来实现判断的效果
+
+            Console.WriteLine(Convert.ToInt32(size.size2));
+
             Console.Read();
         }
     }
@@ -26,6 +29,12 @@ namespace _06_枚举类型
         SAVE_SUCCESS,
         REQUEST,
         aa
+    }
+
+    public enum size
+    {
+        size1 = 1,
+        size2 = 5
     }
 
 }

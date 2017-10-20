@@ -21,7 +21,8 @@ namespace _21_跨线程访问窗体和join方法
 
         // 第一步：定义委托类型
         // 将text更新的界面控件的委托类型
-        delegate void SetTextCallback(string text);
+        //delegate void SetTextCallback(string text);
+        Action<string> SetTextCallback;
 
         //第三步：定义更新UI控件的方法
         /// <summary>

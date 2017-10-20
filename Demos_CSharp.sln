@@ -95,6 +95,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "39_01_Serializable", "39_Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "40_01_引用类型在容器的contain方法里的表现", "40_01_引用类型在容器的contain方法里的表现\40_01_引用类型在容器的contain方法里的表现.csproj", "{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41_01_索引取成员", "41_01_索引取成员\41_01_索引取成员.csproj", "{2BCB20E2-02E4-47B4-94D7-66A9FD5CB03D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42_01_NamedPipeServer", "42_01_NamedPipeServer\42_01_NamedPipeServer.csproj", "{81D1B3BE-ABD1-47F9-8A37-8BDCBED59A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42_02_NamedPipeClient", "42_02_NamedPipeClient\42_02_NamedPipeClient.csproj", "{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -281,6 +287,18 @@ Global
 		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09C7C7AC-8FA5-4D06-8B50-A65A7C23D7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BCB20E2-02E4-47B4-94D7-66A9FD5CB03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BCB20E2-02E4-47B4-94D7-66A9FD5CB03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BCB20E2-02E4-47B4-94D7-66A9FD5CB03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BCB20E2-02E4-47B4-94D7-66A9FD5CB03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D1B3BE-ABD1-47F9-8A37-8BDCBED59A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D1B3BE-ABD1-47F9-8A37-8BDCBED59A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D1B3BE-ABD1-47F9-8A37-8BDCBED59A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D1B3BE-ABD1-47F9-8A37-8BDCBED59A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

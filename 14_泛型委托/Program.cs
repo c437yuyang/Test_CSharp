@@ -27,7 +27,7 @@ namespace _14_泛型委托
             ac2("abcde");
 
             //func,最后一个类型就是返回值的类型
-            Func<int, int, int, int> fun = M2;
+            Func<int, int, int, string> fun = M2;
             Console.WriteLine(M2(1, 2, 3));
 
             //lambda版本
@@ -36,8 +36,6 @@ namespace _14_泛型委托
             Console.WriteLine(x);
             #endregion
             Console.Read();
-
-
         }
 
         static void m1()
@@ -45,9 +43,9 @@ namespace _14_泛型委托
             Console.WriteLine("aa");
         }
 
-        static int M2(int n1,int n2,int n3)
+        static string M2(int n1,int n2,int n3)
         {
-            return n1 + n2 + n3;
+            return (n1 + n2 + n3).ToString();
         }
 
 

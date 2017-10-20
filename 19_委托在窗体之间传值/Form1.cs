@@ -22,7 +22,7 @@ namespace _19_委托在窗体之间传值
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 form2 = new _19_委托在窗体之间传值.Form2();
-            delSetText +=form2.setText;
+            delSetText += form2.setText;
             form2.Show();
         }
 
