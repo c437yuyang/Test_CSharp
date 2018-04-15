@@ -101,6 +101,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42_01_NamedPipeServer", "42
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42_02_NamedPipeClient", "42_02_NamedPipeClient\42_02_NamedPipeClient.csproj", "{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "43_01_List添加相同元素和null", "43_01_List添加相同元素\43_01_List添加相同元素和null.csproj", "{01FA3EAD-FB8C-48D6-9909-2724F0D97084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_01_正则Demos", "07_01_正则Demos\07_01_正则Demos.csproj", "{7F724136-6726-442A-9144-7C3E405F7343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "44_01_ArrayList_List_LinkedList", "44_01_ArrayList_List_LinkedList\44_01_ArrayList_List_LinkedList.csproj", "{CDEDEC74-BDEC-4EEE-809F-BFAC3C954D9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "45_01_try_catch", "45_01_try_catch\45_01_try_catch.csproj", "{25BCF225-6EBB-4E09-8349-D26DEE229665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "46_01_实现类似脚本语言eval方法", "46_01_实现类似脚本语言eval方法\46_01_实现类似脚本语言eval方法.csproj", "{32B5D8A5-55BC-4928-B6B8-5BAC2C987A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -299,6 +309,26 @@ Global
 		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE376E9-BDC1-4C9F-9D44-322A59296F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FA3EAD-FB8C-48D6-9909-2724F0D97084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FA3EAD-FB8C-48D6-9909-2724F0D97084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FA3EAD-FB8C-48D6-9909-2724F0D97084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FA3EAD-FB8C-48D6-9909-2724F0D97084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F724136-6726-442A-9144-7C3E405F7343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F724136-6726-442A-9144-7C3E405F7343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F724136-6726-442A-9144-7C3E405F7343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F724136-6726-442A-9144-7C3E405F7343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDEDEC74-BDEC-4EEE-809F-BFAC3C954D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDEDEC74-BDEC-4EEE-809F-BFAC3C954D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDEDEC74-BDEC-4EEE-809F-BFAC3C954D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDEDEC74-BDEC-4EEE-809F-BFAC3C954D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25BCF225-6EBB-4E09-8349-D26DEE229665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BCF225-6EBB-4E09-8349-D26DEE229665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BCF225-6EBB-4E09-8349-D26DEE229665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BCF225-6EBB-4E09-8349-D26DEE229665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B5D8A5-55BC-4928-B6B8-5BAC2C987A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B5D8A5-55BC-4928-B6B8-5BAC2C987A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B5D8A5-55BC-4928-B6B8-5BAC2C987A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B5D8A5-55BC-4928-B6B8-5BAC2C987A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

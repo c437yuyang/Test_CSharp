@@ -70,6 +70,7 @@ namespace _21_跨线程访问窗体和join方法
         private void button1_Click(object sender, EventArgs e)
         {
             Thread th = new Thread(this.SetText);
+            th.IsBackground = true;
             th.Start("aa");
         }
 

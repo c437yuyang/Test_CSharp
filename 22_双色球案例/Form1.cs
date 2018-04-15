@@ -40,8 +40,8 @@ namespace _22_双色球案例
                     {
                         item.Invoke(new Action<string>((s) =>
                         {
-                            item.Text = s;
-                        }), randNum);
+                            item.Text = randNum;
+                        }), randNum); //这里也是可以直接访问randNum的，不需要传参数这样弄，只是演示一下传参的用法
                     }
                     else
                     {
@@ -50,6 +50,25 @@ namespace _22_双色球案例
                 }
                 //Thread.Sleep(200);
             }
+
+
+            //下面是错误的做法，不能在while外面直接invoke
+            //this.Invoke(new Action(() =>
+            //{
+            //    while (isRunning)
+            //    {
+            //        Random r = new Random();
+            //        foreach (Label item in lables)
+            //        {
+            //            string randNum = r.Next(1, 10).ToString();
+
+            //            item.Text = randNum;
+            //        }
+            //        //Thread.Sleep(200);
+            //    }
+            //}));
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

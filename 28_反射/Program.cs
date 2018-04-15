@@ -12,19 +12,19 @@ namespace _28_反射
         static void Main(string[] args)
         {
 
-            //#region 获取成员
+            #region 获取成员
 
-            ////方法1.有对象的时候
-            //Person p = new Person();
-            //Type type1 = p.GetType();
+            //方法1.有对象的时候
+            Person p = new Person();
+            Type type1 = p.GetType();
 
-            ////2.方法2
-            //Type type2 = typeof(Person);
-            //FieldInfo[] fields = type2.GetFields(); //只能获取共有字段
-            //for (int i = 0; i != fields.Length; ++i)
-            //{
-            //    Console.WriteLine(fields[i]);
-            //}
+            //2.方法2
+            Type type2 = typeof(Person);
+            FieldInfo[] fields = type2.GetFields(); //只能获取共有字段
+            for (int i = 0; i != fields.Length; ++i)
+            {
+                Console.WriteLine(fields[i]);
+            }
 
             ////公有属性
             //PropertyInfo[] props = type2.GetProperties();
@@ -39,7 +39,7 @@ namespace _28_反射
             //{
             //    Console.WriteLine(methods[i]);
             //}
-            //#endregion
+            #endregion
 
             //动态加载程序集
             Assembly asm = Assembly.LoadFile(@"I:\My Documents\My Desktop\codes\CSharp\Demos_CSharp\28_1_TestDll\bin\Debug\28_1_TestDll.dll");
@@ -61,12 +61,12 @@ namespace _28_反射
             //1.3获取指定类型(命名空间+类名)
             Type typePerson = asm.GetType("_28_1_TestDll.Person");
             //调用这个类的方法
-            MethodInfo mi = typePerson.GetMethod("sayHi");
+            MethodInfo mi = typePerson.GetMethod("PublicMethod");
             //创建person的对象
             object obj = Activator.CreateInstance(typePerson);
             mi.Invoke(obj, null); //第一个参数是一个实例，若是静态方法传null，第二个参数就是函数的参数
 
-            MethodInfo hello = typePerson.GetMethod("sayHello", new Type[] { typeof(string) });
+            MethodInfo hello = typePerson.GetMethod("PrivateMethod", new Type[] { typeof(string) }); //这样也可以访问私有方法
             //如果方法有返回值的话，直接接收Invoke的返回值就可以了
             hello.Invoke(Activator.CreateInstance(typePerson), new object[] { "aaa" });
 
@@ -79,9 +79,6 @@ namespace _28_反射
             object obj2 = ci.Invoke(new object[] { "yxp", 20 });
             PropertyInfo pInfo = typePerson.GetProperty("name");
             Console.WriteLine(pInfo.GetValue(obj2,null));
-
-
-
         }
 
         public class Person
@@ -90,12 +87,12 @@ namespace _28_反射
             public string[] _gfs;
 
             public string name { set; get; }
-            public void sayHi()
+            public void PublicMethod()
             {
                 Console.WriteLine("Hi");
             }
 
-            private void sayHello()
+            private void PrivateMethod()
             {
                 Console.WriteLine("Hello");
             }
